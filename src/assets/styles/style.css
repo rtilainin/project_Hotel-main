@@ -1,0 +1,13 @@
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Importer le style sombre mais le désactiver par défaut */
+@import url('dark-mode.css') screen and (prefers-color-scheme: dark);
+
+/* Appliquer le style sombre lorsque la classe 'dark-mode' est présente */
+.dark-mode body {
+    background-color: black;
+    color: white;
+}

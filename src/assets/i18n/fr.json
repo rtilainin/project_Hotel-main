@@ -1,0 +1,11 @@
+{
+    "Home" :{
+       "Category" : "Catégorie"
+    },
+    "header" :{
+        "LANGUAGE": "Langue",
+        "en": "Anglais",
+        "fr": "Français",
+        "ar": "Arabe"
+    }
+}

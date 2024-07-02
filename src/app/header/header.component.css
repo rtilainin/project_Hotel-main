@@ -1,0 +1,116 @@
+.lang-menu {
+    /* width: 100px;  */
+    width: 60px; 
+
+    text-align: right;
+    font-weight: bold;
+     margin-top: 1px; 
+    position: relative;
+}  
+.lang-menu .selected-lang {
+    display: flex;   
+     justify-content: space-between;  
+    line-height: 2;
+    cursor: pointer; 
+    width: 90px;
+
+} 
+
+.lang-menu .selected-lang {
+    display: flex;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 40px; /* Pour faire de la place pour l'image */
+    height: 32px; /* Assurez-vous que la hauteur est définie */
+    line-height: 32px; /* Centrer verticalement le texte */
+  }
+
+  
+ .lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    /* background-image: url(src/assets/images/language/usa.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
+
+ .lang-menu ul {
+     margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+     border: 1px solid #f8f8f8;  
+      position: absolute; 
+     top: 30px; 
+    left: 0;
+
+    right: 0px;
+    width: 107px; 
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2); 
+    z-index: 1000;
+
+} 
+.lang-menu ul.show {
+    display: block;
+}
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 140px;
+    padding: 5px 5px;  /* position la liste des langue  */
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+} 
+
+.en:before {
+background-image: url(src/assets/images/language/usa.png);
+}
+.fr:before {
+background-image: url(src/assets/images/language/fr.png);
+}
+
+.ar:before {
+background-image: url(src/assets/images/language/ma.png);
+}
+
+
+.lang-menu:hover ul {
+display: block;
+} 
+
+
+/* .en:before {
+background-image: url(https://flagsapi.com/US/flat/32.png);
+}
+.fr:before {
+background-image: url(https://flagsapi.com/FR/flat/32.png);
+}
+
+.ar:before {
+background-image: url(https://flagsapi.com/MA/flat/32.png);
+} */

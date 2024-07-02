@@ -1,0 +1,89 @@
+<!-- header Start -->
+<header class="header-style-6">
+    <div class="left-header">
+        <a routerLink="/index">
+            <img src="../../assets/images/logo/6.svg" class="img-fluid" alt="">
+        </a>
+    </div>
+
+    <!-- <div class="lang-menu">
+        <div class="selected-lang">
+            English
+        </div>
+        <ul>
+            <li>
+                <a href="" class="en">English</a>
+            </li>
+            <li>
+                <a href="" class="fr">French</a>
+            </li>
+            <li>
+                <a href="" class="ar">Arabic</a>
+            </li>
+        </ul>
+    </div>  -->
+
+    <div class="lang-menu">
+        <div class="selected-lang" [ngStyle]="{'background-image': 'url(' + getLangImage() + ')'}">
+          {{ 'header.' + selectedLang | translate }}
+        </div>
+        <ul>
+          <li>
+            <a  (click)="switchLanguage('en')" class="en">{{ 'header.en' | translate }}</a>
+          </li>
+          <li>
+            <a  (click)="switchLanguage('fr')" class="fr">{{ 'header.fr' | translate }}</a>
+          </li>
+          <li>
+            <a (click)="switchLanguage('ar')" class="ar">{{ 'header.ar' | translate }}</a>
+          </li>
+        </ul>
+      </div>
+
+    <div class="right-header">
+        <a routerLink="/address" class="btn location-btn">
+            <i class="ri-map-pin-2-line"></i> Bastrop, Texas</a>
+        <a routerLink="/account" class="profile-image">
+            <img src="../../assets/images/grocery/dp.jpg" class="img-fluid" alt="">
+        </a>
+    </div>
+
+     
+
+
+     <!-- <div class="lang-menu">
+        <div class="selected-lang" (click)="toggleDropdown()">
+            {{ selectedLang }}
+        </div>
+        <ul [class.show]="dropdownOpen">
+            <li>
+                <a href="" class="en" (click)="selectLang('English')">English</a>
+            </li>
+            <li>
+                <a href="" class="fr" (click)="selectLang('French')">French</a>
+            </li>
+            <li>
+                <a href="" class="ar" (click)="selectLang('Arabic')">Arabic</a>
+            </li>
+        </ul>
+    </div> -->
+    
+
+
+</header>
+<!-- header End -->
+
+
+<!-- Search Section Start -->
+<section>
+    <div class="custom-container">
+        <form class="form-style-7">
+            <div class="form-box search-box mb-19">
+                <input type="search" class="form-control" placeholder="Search here..">
+                <i class="ri-search-line"></i>
+                <i class="ri-mic-line mic-icon"></i>
+            </div>
+        </form>
+    </div>
+</section>
+<!-- Search Section End -->
