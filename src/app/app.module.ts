@@ -7,6 +7,7 @@ import { ThemeSettingComponent } from './theme-setting/theme-setting.component';
 import { HomeComponent } from './home/home.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { HeaderComponent } from './header/header.component';
+import { BannerComponent } from './banner/banner.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -21,7 +22,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppComponent,
     ThemeSettingComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,
