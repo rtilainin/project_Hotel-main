@@ -1,34 +1,37 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnInit,Input } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent  {
+export class HeaderComponent implements OnInit {
 
   selectedLang: string;
+  @Input() showLogo: boolean = true;
+  @Input() showText: boolean = false;
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private languageService: LanguageService) {
     // Définir la langue par défaut
    // this.translate.setDefaultLang('en');
      // Définir la langue par défaut
-     this.selectedLang = 'fr';
+     this.selectedLang = 'FR';
      this.translate.setDefaultLang(this.selectedLang);
   }
 
-  switchLanguage(language: string) {
+  /*switchLanguage(language: string) {
     this.selectedLang = language;
     this.translate.use(language);
-  }
+  }*/
 
 
   getLangImage(): string {
     switch (this.selectedLang) {
-      case 'fr':
+      case 'FR':
         return 'assets/images/language/fr.png';
-      case 'ar':
+      case 'AR':
         return 'assets/images/language/ma.png';
       default:
         return 'assets/images/language/usa.png';
@@ -65,6 +68,13 @@ export class HeaderComponent  {
   // }
 
 
+  ngOnInit(): void {
+    this.selectedLang = this.languageService.getLanguage();
+  }
 
-  
+  switchLanguage(language: string): void {
+    this.languageService.setLanguage(language);
+    this.selectedLang = language;
+    this.translate.use(language);
+  }
 }

@@ -11,10 +11,12 @@ import { BannerComponent } from './banner/banner.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { FloristsComponent } from './florists/florists.component';
 
 // Fonction pour charger les fichiers de traduction
 export function HttpLoaderFactory(http: HttpClient) {
-  return new TranslateHttpLoader(http);
+ return new TranslateHttpLoader(http);
+
 }
 
 @NgModule({
@@ -23,7 +25,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ThemeSettingComponent,
     HomeComponent,
     HeaderComponent,
-    BannerComponent
+    BannerComponent,
+    FloristsComponent
   ],
   imports: [
     BrowserModule,

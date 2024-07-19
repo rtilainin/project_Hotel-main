@@ -1,0 +1,34 @@
+.nav-link {
+    display: block;
+    padding: var(--#{$prefix}nav-link-padding-y) var(--#{$prefix}nav-link-padding-x);
+    @include font-size(var(--#{$prefix}nav-link-font-size));
+    font-weight: var(--#{$prefix}nav-link-font-weight);
+    color: var(--#{$prefix}nav-link-color);
+    text-decoration: if($link-decoration == none, null, none);
+    @include transition($nav-link-transition);
+  
+    &:hover,
+    &:focus {
+      color: var(--#{$prefix}nav-link-hover-color);
+      text-decoration: if($link-hover-decoration == underline, none, null);
+    }
+  
+    // Disabled state lightens text
+    &.disabled {
+      color: var(--#{$prefix}nav-link-disabled-color);
+      pointer-events: none;
+      cursor: default;
+    }
+  }
+
+  .nav-link.active {
+    background-color: var(--#{$prefix}card-bg);
+    border-bottom-color: var(--#{$prefix}card-bg);
+  }
+
+  .nav-fill,
+.nav-justified {
+  .nav-item .nav-link {
+    width: 100%;
+  }
+}

@@ -1,12 +1,16 @@
 {
     "Home" :{
+       "Category" : "Category",
+        "Food" : "Foods"
+    },
+    "Banner" :{
        "Category" : "Category"
     },
 
     "header" :{
         "LANGUAGE": "Language",
-        "en": "English",
-        "fr": "French",
-        "ar": "Arabic"
+        "EN": "English",
+        "FR": "French",
+        "AR": "Arabic"
      }
 }

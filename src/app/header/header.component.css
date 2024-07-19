@@ -1,15 +1,18 @@
 .lang-menu {
     /* width: 100px;  */
-    width: 60px; 
-
-    text-align: right;
+    width: 70px; 
+    display: flex; 
+    text-align: left;
     font-weight: bold;
      margin-top: 1px; 
     position: relative;
+    box-shadow: 3px 3px 2px 1px rgba(96, 97, 99, 0.493);
+    border-radius: 4px;
+    border: black;
 }  
 .lang-menu .selected-lang {
     display: flex;   
-     justify-content: space-between;  
+    /*justify-content: space-between;*/
     line-height: 2;
     cursor: pointer; 
     width: 90px;
@@ -21,9 +24,11 @@
     align-items: center;
     background-size: contain;
     background-repeat: no-repeat;
-    padding-left: 40px; /* Pour faire de la place pour l'image */
+   /*  padding-left: 0px; Pour faire de la place pour l'image */
     height: 32px; /* Assurez-vous que la hauteur est définie */
     line-height: 32px; /* Centrer verticalement le texte */
+    padding-left: 3px;
+    
   }
 
   
@@ -35,6 +40,7 @@
     /* background-image: url(src/assets/images/language/usa.png); */
     background-size: contain;
     background-repeat: no-repeat;
+    
 } 
 
  .lang-menu ul {
@@ -46,7 +52,7 @@
       position: absolute; 
      top: 30px; 
     left: 0;
-
+    
     right: 0px;
     width: 107px; 
     border-radius: 5px;
@@ -114,3 +120,19 @@ background-image: url(https://flagsapi.com/FR/flat/32.png);
 .ar:before {
 background-image: url(https://flagsapi.com/MA/flat/32.png);
 } */
+
+.ri-shopping-cart-line:before {
+    content: "\f120";
+  }
+
+  .font-room {
+    font-family: serif;
+    text: 30px;
+  }
+
+
+  .my-shopping-cart{
+
+    size: 100cap;
+  }
+  

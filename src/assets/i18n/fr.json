@@ -1,11 +1,12 @@
 {
     "Home" :{
-       "Category" : "Catégorie"
+       "Category" : "Catégorie",
+       "Food" : "Repas"
     },
     "header" :{
         "LANGUAGE": "Langue",
-        "en": "Anglais",
-        "fr": "Français",
-        "ar": "Arabe"
+        "EN": "Anglais",
+        "FR": "Français",
+        "AR": "Arabe"
     }
 }

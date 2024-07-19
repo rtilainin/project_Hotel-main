@@ -1,9 +1,14 @@
 <!-- header Start -->
 <header class="header-style-6">
-    <div class="left-header">
+    <div *ngIf="showLogo" class="left-header">
         <a routerLink="/index">
-            <img src="../../assets/images/logo/6.svg" class="img-fluid" alt="">
+            <img src="../../assets/images/logo/logo_hotel_f.png" class="img-fluid" alt="">
         </a>
+    </div>
+
+    
+    <div *ngIf="showText" class="left-header">
+        <p>Florists service</p>
     </div>
 
     <!-- <div class="lang-menu">
@@ -25,29 +30,29 @@
 
     <div class="lang-menu">
         <div class="selected-lang" [ngStyle]="{'background-image': 'url(' + getLangImage() + ')'}">
-          {{ 'header.' + selectedLang | translate }}
+          {{selectedLang}}
         </div>
+        <i class="ri-arrow-down-s-line"></i>
         <ul>
           <li>
-            <a  (click)="switchLanguage('en')" class="en">{{ 'header.en' | translate }}</a>
+            <a  (click)="switchLanguage('EN')" class="en">{{ 'header.EN' | translate }}</a>
           </li>
           <li>
-            <a  (click)="switchLanguage('fr')" class="fr">{{ 'header.fr' | translate }}</a>
+            <a  (click)="switchLanguage('FR')" class="fr">{{ 'header.FR' | translate }}</a>
           </li>
           <li>
-            <a (click)="switchLanguage('ar')" class="ar">{{ 'header.ar' | translate }}</a>
+            <a (click)="switchLanguage('AR')" class="ar">{{ 'header.AR' | translate }}</a>
           </li>
         </ul>
       </div>
 
     <div class="right-header">
-        <a routerLink="/address" class="btn location-btn">
-            <i class="ri-map-pin-2-line"></i> Bastrop, Texas</a>
-        <a routerLink="/account" class="profile-image">
-            <img src="../../assets/images/grocery/dp.jpg" class="img-fluid" alt="">
-        </a>
+        <a routerLink="/address" class="btn location-btn font-room">
+             112</a>
+             <a href="">
+                <i class="ri-shopping-cart-line my-shopping-cart"></i>
+            </a>
     </div>
-
      
 
 
