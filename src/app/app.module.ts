@@ -12,6 +12,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FloristsComponent } from './florists/florists.component';
+import { FloristsWeddCollectionComponent } from './florists-wedd-collection/florists-wedd-collection.component';
+import { FloristsAnnivCollectionComponent } from './florists-anniv-collection/florists-anniv-collection.component';
 
 // Fonction pour charger les fichiers de traduction
 export function HttpLoaderFactory(http: HttpClient) {
@@ -26,7 +28,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     HeaderComponent,
     BannerComponent,
-    FloristsComponent
+    FloristsComponent,
+    FloristsWeddCollectionComponent,
+    FloristsAnnivCollectionComponent
   ],
   imports: [
     BrowserModule,
