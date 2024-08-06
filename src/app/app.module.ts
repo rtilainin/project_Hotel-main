@@ -15,6 +15,8 @@ import { FloristsComponent } from './florists/florists.component';
 import { FloristsWeddCollectionComponent } from './florists-wedd-collection/florists-wedd-collection.component';
 import { FloristsAnnivCollectionComponent } from './florists-anniv-collection/florists-anniv-collection.component';
 import { LoginComponent } from './login/login.component';
+import { FloristsIloveyouCollectionComponent } from './florists-iloveyou-collection/florists-iloveyou-collection.component';
+import { FloristsThankyouCollectionComponent } from './florists-thankyou-collection/florists-thankyou-collection.component';
 
 // Fonction pour charger les fichiers de traduction
 export function HttpLoaderFactory(http: HttpClient) {
@@ -32,7 +34,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     FloristsComponent,
     FloristsWeddCollectionComponent,
     FloristsAnnivCollectionComponent,
-    LoginComponent
+    LoginComponent,
+    FloristsIloveyouCollectionComponent,
+    FloristsThankyouCollectionComponent
   ],
   imports: [
     BrowserModule,
