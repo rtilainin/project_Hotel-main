@@ -8,7 +8,10 @@
 
     
     <div *ngIf="showText" class="left-header">
-        <p>Florists service</p>
+        <a href="javascript:history.back()" class="head-arrow btn">
+            <i class="ri-arrow-left-line"></i>
+        </a>
+        <h4>{{leftText}}</h4>
     </div>
 
     <!-- <div class="lang-menu">
@@ -50,7 +53,7 @@
         <a routerLink="/address" class="btn location-btn font-room">
              112</a>
              <a href="">
-                <i class="ri-shopping-cart-line my-shopping-cart"></i>
+                <i class="ri-shopping-cart-line my-shopping-cart large-icon"></i>
             </a>
     </div>
      

@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
   selectedLang: string;
   @Input() showLogo: boolean = true;
   @Input() showText: boolean = false;
+  @Input() leftText: string = '';
 
   constructor(private translate: TranslateService, private languageService: LanguageService) {
     // Définir la langue par défaut

@@ -4,13 +4,18 @@ import { HomeComponent } from './home/home.component';
 import { IndexComponent } from './index/index.component';
 import { FloristsComponent } from './florists/florists.component';
 import { FloristsWeddCollectionComponent } from './florists-wedd-collection/florists-wedd-collection.component';
+import { FloristsAnnivCollectionComponent } from './florists-anniv-collection/florists-anniv-collection.component';
+import { LoginComponent } from './login/login.component';
+
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
+  { path: '', redirectTo: 'login', pathMatch: 'full'},
    { path: 'home', component: HomeComponent },
   { path: 'index', component: IndexComponent },
   { path: 'florists', component: FloristsComponent },
-  { path: 'florists/wedd_collection', component: FloristsWeddCollectionComponent }
+  { path: 'florists/wedd_collection', component: FloristsWeddCollectionComponent },
+  { path: 'florists/anniv_collection', component: FloristsAnnivCollectionComponent },
+  { path: 'login', component: LoginComponent }
 
 ];
 

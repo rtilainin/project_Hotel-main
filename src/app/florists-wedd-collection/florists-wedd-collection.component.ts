@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class FloristsWeddCollectionComponent {
 
+  wedding : string = 'Wedding Collection';
 }

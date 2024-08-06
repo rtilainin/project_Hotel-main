@@ -7,41 +7,14 @@
     </div>
     <!-- Loader Box End -->
 
-    <!-- header Section Start -->
-    <header class="header-style-5">
-        <div class="header-left">
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu">
-                <i class="ri-bar-chart-horizontal-line"></i>
-            </button>
-            <h4 class="header-title">Wedding Collection</h4>
-        </div>
-        <div class="header-right">
-            <a href="notification.html" class="notification">
-                <i class="ri-notification-2-line"></i>
-            </a>
-            <a href="wishlist.html">
-                <i class="ri-heart-3-line"></i>
-            </a>
-            <a href="cart.html">
-                <i class="ri-shopping-cart-line"></i>
-            </a>
-        </div>
-    </header>
-    <!-- header Section End -->
+    <app-header 
+[showLogo]="false" 
+[showText]="true"
+[leftText]="wedding">
+</app-header>
 
 
-    <!-- Product Search Section Start -->
-    <section class="search-hotel-section">
-        <div class="custom-container">
-            <form class="form-style-6">
-                <div class="search-box">
-                    <input type="search" class="form-control" placeholder="Search products here..">
-                    <i class="ri-search-2-line"></i>
-                </div>
-            </form>
-        </div>
-    </section>
-    <!-- Product Search Section End -->
+
 
     <!-- Product Section Start -->
     <section class="section-b-space-3">

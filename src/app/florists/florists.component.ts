@@ -9,6 +9,8 @@ import { LanguageService } from '../services/language.service';
 })
 export class FloristsComponent implements OnInit{
 
+  florists: string = 'Florists';
+
   constructor(private translate: TranslateService,private languageService: LanguageService) {
   }
 

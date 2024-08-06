@@ -1,6 +1,9 @@
 <app-header 
 [showLogo]="false" 
-[showText]="true"></app-header>
+[showText]="true"
+[leftText]="florists">
+</app-header>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,14 +20,13 @@
                 <li>
                     <a routerLink="wedd_collection" class="category-box">
                         <img src="../assets/images/ecommerce/category/1.jpg" class="img-fluid" alt="">
+                        <h5>wedding</h5>
                     </a>
-                    <button class="nav-link" id="pills-tshirt-tab" data-bs-toggle="pill" data-bs-target="#pills-tshirt"
-                    type="button" role="tab">wedding</button>
                 </li>
                 <li>
-                    <a href="shop-grid.html" class="category-box">
+                    <a routerLink="anniv_collection" class="category-box">
                         <img src="../assets/images/ecommerce/category/2.jpg" class="img-fluid" alt="">
-                        <h5>Women</h5>
+                        <h5>Anniversary</h5>
                     </a>
                 </li>
                 <li>

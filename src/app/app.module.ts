@@ -14,6 +14,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { FloristsComponent } from './florists/florists.component';
 import { FloristsWeddCollectionComponent } from './florists-wedd-collection/florists-wedd-collection.component';
 import { FloristsAnnivCollectionComponent } from './florists-anniv-collection/florists-anniv-collection.component';
+import { LoginComponent } from './login/login.component';
 
 // Fonction pour charger les fichiers de traduction
 export function HttpLoaderFactory(http: HttpClient) {
@@ -30,7 +31,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     BannerComponent,
     FloristsComponent,
     FloristsWeddCollectionComponent,
-    FloristsAnnivCollectionComponent
+    FloristsAnnivCollectionComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
